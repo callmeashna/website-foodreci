@@ -61,8 +61,6 @@ Folder Structure
 ├── /js
 │   ├── script.js
 │   └── recipe.js
-├── /images
-│   └── (logo and background images)
 └── README.md
 
 
