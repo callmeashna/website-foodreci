@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #ffecd2, #c6fc9f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+
+    .thankyou-container {
+      text-align: center;
+      animation: popUp 1.5s ease forwards;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .thankyou-container h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #ff6f61;
+      animation: slideIn 1s ease forwards;
+    }
+
+    .thankyou-container p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .home-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #ff6f61;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(255, 111, 97, 0.4);
+    }
+
+    .home-button:hover {
+      background-color: #ff3b2e;
+      box-shadow: 0 6px 20px rgba(255, 59, 46, 0.5);
+      transform: translateY(-2px);
+    }
+
+    @keyframes popUp {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thankyou-container">
+    <h1>Thank You!</h1>
+    <p>Your feedback means a lot to us.</p>
+    <a href="index.html" class="home-button">Go Back Home</a>
+  </div>
+
+</body>
+</html>
